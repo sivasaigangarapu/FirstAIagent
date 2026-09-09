@@ -7,10 +7,11 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
 
 @Service
+//argumented
 @RequiredArgsConstructor
 public class ExplanationService {
     private final ChatClient.Builder chatbuilder;
-
+   //class ir responsible for request and response validation
     public ExplanationResponse explainservice(ExplanationRequest request) {
         ChatClient chatClient = chatbuilder.build();
 
